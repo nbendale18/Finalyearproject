@@ -136,7 +136,7 @@ def main():
                     submit = st.button('Submit')
                     if submit:
                         df = [age,sex,Chest_pain,Resting_blood_pressure,Cholestrol,Thalach,EIA,Oldpeak,Slope,CA,Thal]
-                        heart = pd.read_csv("dataset.csv")
+                        heart = pd.read_csv("data/dataset.csv")
                         X = heart.iloc[:,0:11].values
                         Y = heart.iloc[:,[11]].values
                         print(X.shape)
